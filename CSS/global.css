@@ -402,7 +402,7 @@ ul {
 
 /***** Header *****/
 .header {
-  max-width: 1920px;
+  /*max-width: 1920px;*/
   margin: 0 auto;
   padding: 0 5%;
   position: relative;
@@ -415,13 +415,17 @@ ul {
 
 @media (min-width: 1920px) {
   .header {
-    padding: 0;
-    width: 90%;
+    padding: 0 2em;
+    width: 100%;
   }
 }
 
 .logo img {
   max-height: 37px;
+}
+
+.logo {
+  margin: auto 0;
 }
 
 .user-nav {
@@ -657,7 +661,7 @@ ul {
 
 .search input[type="search"] {
   border: 1px solid #ddd;
-  border-radius: 30px;
+  border-radius: 5px;
   box-sizing: border-box;
   color: #999;
   height: 40px;

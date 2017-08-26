@@ -1,8 +1,10 @@
-<!-- Pie de Página-->
 <footer class="footer">
   <div class="footer-inner">
-    {{#link 'help_center'}}{{help_center.name}}{{/link}}
-
+      <div class="logo">
+    {{#link 'help_center'}}
+      <img src="{{logo_url}}" alt="{{t 'logo'}}">
+    {{/link}}
+  </div>
     <div class="footer-language-selector">
       {{#if alternative_locales}}
         <div class="dropdown language-selector" aria-haspopup="true">
