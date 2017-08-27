@@ -593,11 +593,16 @@ ul {
 .footer {
   border-top: 1px solid #ddd;
   margin-top: 60px;
-  padding: 30px 0;
+  padding: 10px 0;
   background-color:black;
 }
 
 .footer a {
+  /*color: lighten($color_4, 20%);*/
+   color: $color_4;
+}
+
+.footer p {
   /*color: lighten($color_4, 20%);*/
    color: $color_4;
 }
@@ -1493,10 +1498,13 @@ ul {
   margin: 20px 0;
 }
 
+
+
 .recent-articles li,
 .related-articles li {
   margin-bottom: 15px;
 }
+
 
 /***** Attachments *****/
 /* Styles attachments inside posts, articles and comments */
@@ -4045,4 +4053,19 @@ ul {
   content: "·";
   display: inline-block;
   margin: 0 5px;
+}
+
+/****** Help Index Section*****/
+/* Style for the index page bottom section Ayuda*/
+
+.help-articles h2 {
+  font-size: 22px;
+  margin: 20px 0;
+  text-align:center;
+  }
+
+.help-articles {
+  max-width:30%;
+  text-align: justify;
+  text-justify: inter-word;
 }

@@ -38,34 +38,39 @@
       {{pagination}}
     </section>
 
-    {{#if promoted_articles}}
-      <section class="articles">
-        <h3>{{t 'promoted_articles'}}</h3>
-        <ul class="article-list promoted-articles">
-          {{#each promoted_articles}}
-            <li class="promoted-articles-item">
-              <a href="{{url}}">
-                {{title}}
-              </a>
-            </li>
-          {{/each}}
-        </ul>
-      </section>
-    {{/if}}
+
   </section>
 
-  {{#if help_center.community_enabled}}
-    <section class="section community">
-      <h2>{{t 'community'}}</h2>
-      {{#link 'community' class='community-link'}}
-        {{t 'join_conversation'}}
-      {{/link}}
-
-      <div class="community-image"></div>
-    </section>
-  {{/if}}
 
   <section class="section activity">
     {{recent_activity}}
   </section>
+  
+
+
+    <section class="article-relatives">
+       {{#if help_center.community_enabled}}
+      <section class="help-articles">
+
+      {{#link 'community' class='community-link'}}
+         <h2>{{t 'community'}}</h2>
+      {{/link}}
+         <span class="pagination">Wiki creada por los usuarios.</span>
+        </section>
+      {{/if}}
+
+  <section class="help-articles">
+      {{#link 'help_center'}}
+             <h2>{{t 'knowledge_base'}}</h2>
+          {{/link}}
+        <span class="pagination">Compendio de artículos con tips, consejos y fórmulas para optimizar tu equipo Lanix</span>
+   </section>
+
+    <section class="help-articles">
+     {{#link 'new_request'}}
+             <h2>{{t 'knowledge_base'}}</h2>
+          {{/link}}
+        <span class="pagination">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un Agente de Soporte.</span>
+    </section>
+    </section>
 </div>
