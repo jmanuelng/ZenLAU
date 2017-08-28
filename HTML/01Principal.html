@@ -1,8 +1,12 @@
 <section class="section hero">
   <div class="hero-inner">
-      <h1>¡Hola! ¿Cómo podemos ayudarte?</h2>
+      <h1>¡Hola! ¿Cómo podemos ayudarte?</h1>
     {{search submit=false instant=true class='search search-full'}}
-    <h2><a href='' class="blocks-item-link">Contactar un Agente de Soporte</a></h2>
+
+         {{#link 'new_request'  class="blocks-item-link"}}
+             <h2>Contactar un Agente de Soporte</h2>
+          {{/link}}
+
   </div>
 </section>
 
@@ -45,10 +49,15 @@
   <section class="section activity">
     {{recent_activity}}
   </section>
-  
 
+<section class="section community">
+       <h2>Producto Destacado</h2>
+
+       <div class="community-image"></div>
+     </section>
 
     <section class="article-relatives">
+
        {{#if help_center.community_enabled}}
       <section class="help-articles">
 
@@ -67,8 +76,9 @@
    </section>
 
     <section class="help-articles">
-     {{#link 'new_request'}}
-             <h2>{{t 'knowledge_base'}}</h2>
+       <h2>Contactar un Agente</h2>
+    {{#link 'new_request'}}
+
           {{/link}}
         <span class="pagination">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un Agente de Soporte.</span>
     </section>
