@@ -126,6 +126,10 @@ textarea:focus {
   margin-bottom: 20px;
 }
 
+.submeta-divider {
+  margin-bottom: 20px;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -4058,6 +4062,12 @@ ul {
 /****** Help Index Section*****/
 /* Style for the index page bottom section Ayuda*/
 
+.help-articles h1 {
+  display: inline;
+  vertical-align: middle;
+  }
+
+
 .help-articles h2 {
   font-size: 22px;
   margin: 20px 0;
@@ -4068,4 +4078,12 @@ ul {
   max-width:30%;
   text-align: justify;
   text-justify: inter-word;
+}
+
+.help-articles a {
+  color:$color_2;
+}
+
+.help-articles span {
+  color:$color_4;
 }
