@@ -2,6 +2,9 @@
   <div class="hero-inner">
       <h1>¿Buscas algo más específico?</h1>
     {{search submit=false instant=true class='search search-full'}}
+             {{#link 'new_request'  class="blocks-barra-link"}}
+             <h2>Contactar un Agente de Soporte</h2>
+          {{/link}}
   </div>
 </section>
 
@@ -14,19 +17,18 @@
   <div class="section-container">
     <section class="section-content">
       <header class="page-header">
-        <h1>
-          {{section.name}}
-          {{#if section.internal}}
-            <span class="icon-lock" title="{{t 'internal'}}"></span>
-          {{/if}}
-        </h1>
         {{subscribe}}
-        {{#if section.description}}
+      </header>
+    </section>
+  </div>
+
+      <section class="section">
+      {{#link 'help_center'}}
+             <h2 class='blocks-ayuda-link'>{{t 'knowledge_base'}}  {{section.name}}</h2>
+          {{/link}}
+  {{#if section.description}}
           <p class="page-header-description">{{section.description}}</p>
         {{/if}}
-      </header>
-
-
       {{#if section.articles}}
         <ul class="article-list">
           {{#each section.articles}}
@@ -45,11 +47,20 @@
       {{/if}}
 
       {{pagination}}
-    </section>
+     </section>
 
 
-  </div>
-      <section class="section community">
+{{#if help_center.community_enabled}}
+ <section class="section community">
+      <h2>{{t 'community'}} {{section.name}}</h2>
+      {{#link 'community' class='community-link'}}
+        {{t 'join_conversation'}}
+      {{/link}}
+
+ </section>
+{{/if}}
+
+    <section class="section community">
        <h2>Contactar un Agente</h2>
       <ul>
         <li class="agentefont"> <i class="fa fa-handshake-o fa-5x "></i></li></ul>
