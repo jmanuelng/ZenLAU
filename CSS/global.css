@@ -1,16 +1,10 @@
 @charset "UTF-8";
 /***** Base *****/
 
-html {
-  height: 100%;
+*{
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 
 body {
   background-color: $color_5;
@@ -22,7 +16,7 @@ body {
   -webkit-font-smoothing: antialiased;
   position:relative;
   margin: 0;
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
   min-height: 100%;
 }
 
@@ -442,6 +436,7 @@ ul {
 
 .logo {
   margin: auto 0;
+  padding:0.5em;
 }
 
 .user-nav {
@@ -1006,7 +1001,7 @@ ul {
 .community,
 .activity {
   border-top: 1px solid #ddd;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 /***** Recent activity *****/
@@ -4125,6 +4120,8 @@ color:$color_1;
  font-size:2.2em;
 }
 
+/***** Sección Ayudas Index *****/
+
 .ayuda-item{
  box-sizing: border-box;
   color: $color_4;
@@ -4154,6 +4151,12 @@ color:$color_1;
   padding: 20px 30px;
 }
 
+.blocks-barra-link {
+  color: $color_5;
+  padding: 20px 30px;
+}
+
+
 .blocks-ayuda-description {
   font-weight: 300;
   margin: 0;
@@ -4163,5 +4166,36 @@ color:$color_1;
   margin-top: 10px;
 }
 
+/***** Redes Social *****/
 
+.red-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin:auto;
+}
+
+@media (min-width: 768px) {
+  .red-list {
+    margin: auto;
+  }
+}
+
+.red-item{
+ box-sizing: border-box;
+  color: $color_4;
+  justify-content: center;
+ padding:0 3em;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .red-item {
+      margin: 0.5em 5em;
+  }
+}
 /***** Destacado Index *****/

@@ -6,12 +6,9 @@
 </section>
 
 
-
-
 <div class="container">
   <nav class="sub-nav">
     {{breadcrumbs}}
-    {{search submit=false}}
   </nav>
 
   <div class="section-container">
@@ -49,5 +46,15 @@
 
       {{pagination}}
     </section>
+
+
   </div>
+      <section class="section community">
+       <h2>Contactar un Agente</h2>
+      <ul>
+        <li class="agentefont"> <i class="fa fa-handshake-o fa-5x "></i></li></ul>
+{{#link 'new_request'}}
+
+          {{/link}}
+    </section>
 </div>
