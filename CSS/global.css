@@ -14,10 +14,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  position:relative;
-  margin: 0;
-  padding-bottom: 4rem;
-  min-height: 100%;
+
 }
 
 @media (min-width: 1024px) {
@@ -607,10 +604,10 @@ ul {
   padding: 0 0;
   background-color:black;
   width: 100%;
-  position: absolute;
+  /*position: absolute;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0;*/
   }
 
 .footer a {
@@ -632,11 +629,10 @@ ul {
 }
 
 .footer-redes {
-  padding: 10px 0;
   max-width: 1920px;
   width:100%;
   margin: 0 0;
-  padding: 0 5%;
+  padding: 0 2%;
   display: flex;
   justify-content: space-between;
   background-color: lighten($color_4, 23%);
