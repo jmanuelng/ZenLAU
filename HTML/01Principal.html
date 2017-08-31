@@ -54,32 +54,34 @@
        <div class="community-image"></div>
      </section>
 
-    <section class="article-relatives">
 
-       {{#if help_center.community_enabled}}
-      <section class="help-articles">
 
-      {{#link 'community' class='community-link'}}
+
+  <section class="section knowledge-base">
+    <section class="categories blocks">
+      <ul class="blocks-list">
+            <li class="ayuda-item">
+                       {{#link 'community' class='blocks-ayuda-link'}}
          <h2>{{t 'community'}}</h2>
       {{/link}}
-         <span class="pagination">Wiki creada por los usuarios.</span>
-        </section>
-      {{/if}}
-
-  <section class="help-articles">
-      {{#link 'help_center'}}
+                <p class="blocks-ayuda-description">Wiki de la Comunidad</p>
+                   </li>
+          <li class="ayuda-item">
+                          {{#link 'help_center' class="blocks-ayuda-link"}}
              <h2>{{t 'knowledge_base'}}</h2>
           {{/link}}
-        <span class="pagination">Compendio de artículos con tips, consejos y fórmulas para optimizar tu equipo Lanix</span>
-   </section>
+                <p class="blocks-ayuda-description">Compendio de artículos con tips, consejos y fórmulas para optimizar tu equipo Lanix</p>
+                   </li>
 
-    <section class="help-articles">
-       <h2>Contactar un Agente</h2>
+            <li class="ayuda-item">
 
-        <span class="pagination">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un Agente de Soporte.</span>
-          {{#link 'new_request'}}
+         <h2 class="blocks-ayuda-link">Contactar un Agente</h2>
+                                          {{#link 'new_request'}}
 
-          {{/link}}
+          {{/link}} <p class="blocks-ayuda-description">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un Agente de Soporte.</p>
+                   </li>
+      </ul>
+      </section>
     </section>
-    </section>
+
 </div>

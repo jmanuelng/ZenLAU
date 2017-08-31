@@ -25,7 +25,13 @@
   <nav class="sub-nav">
     {{breadcrumbs}}
   </nav>
-
+  
+    <section class="section community">
+      {{#link 'help_center'}}
+             <h2>{{t 'knowledge_base'}}</h2>
+          {{/link}}
+        <span>Compendio de artículos con tips, consejos y fórmulas para optimizar tu equipo Lanix</span>
+   </section>
 
 
 {{#if help_center.community_enabled}}
@@ -38,19 +44,11 @@
  </section>
 {{/if}}
 
-
-    <section class="section community">
-      {{#link 'help_center'}}
-             <h2>{{t 'knowledge_base'}}</h2>
-          {{/link}}
-        <span>Compendio de artículos con tips, consejos y fórmulas para optimizar tu equipo Lanix</span>
-   </section>
-
-
     <section class="section community">
        <h2>Contactar un Agente</h2>
-
-        <span >¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un Agente de Soporte.</span>     {{#link 'new_request'}}
+      <ul>
+        <li class="agentefont"> <i class="fa fa-handshake-o fa-5x "></i></li></ul>
+{{#link 'new_request'}}
 
           {{/link}}
     </section>
