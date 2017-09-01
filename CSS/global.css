@@ -4386,15 +4386,15 @@ margin-top:2rem;
   color: $color_1;
 }
 
-label .fa {
+.label .fa {
   font-size: 1.3em;
   margin: 0 0.4em 0 0;
 }
 
 /*Media query*/
-@media only screen and (max-width: 900px) {
-  label span {
-    display: none;
+@media only screen and (max-width: 700px) {
+  .label-soporte span {
+    font-size:12px;
   }
 
   .tab_container {
@@ -4402,6 +4402,16 @@ label .fa {
   }
 }
 
+
+@media only screen and (max-width: 450px) {
+  .label-soporte span {
+    font-size:6px;
+  }
+
+  .tab_container {
+    width: 98%;
+  }
+}
 /*Content Animation*/
 @keyframes fadeInScale {
   0% {
