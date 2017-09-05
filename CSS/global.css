@@ -4148,7 +4148,7 @@ color:$color_1;
 }
 
 .blocks-barra-link {
-  color: $color_5;
+  color: $color_2;
   padding: 20px 30px;
 }
 
@@ -4197,7 +4197,7 @@ color:$color_1;
 /***** Ticket *****/
 
 .ticketSoporte {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/light-300431.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/index-1-banner-soporte---opcion3.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -4215,13 +4215,38 @@ color:$color_1;
 }
 
 .catMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/office.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-moviles.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
   padding: 0 20px;
   text-align: left;
   width: 100%;
+}
+
+.catTab {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-tablets3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  padding: 0 20px;
+  text-align: right;
+  width: 100%;
+}
+
+.catComp {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-computadores2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+
+}
+
+.catComp h1 {
+  color:#fff;
 }
 .centros{
 margin-top:2rem;
@@ -4329,7 +4354,7 @@ margin-top:2rem;
 
 /*Fun begins*/
 .tab_container {
-	width: 90%;
+	width: 98%;
 	margin: 0 auto;
 	padding-top: 70px;
 	position: relative;
@@ -4431,4 +4456,23 @@ margin-top:2rem;
 }
 .link {
   text-align:center;
+}
+
+/** Estilos de Sección Catálogo **/
+.herocatalogo {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-moviles.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.herocatalogo-inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 610px;
+  margin: 0 auto;
 }

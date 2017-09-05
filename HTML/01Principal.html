@@ -3,8 +3,8 @@
       <h1>¡Hola! ¿Cómo podemos ayudarte?</h1>
     {{search submit=false instant=true class='search search-full'}}
 
-         {{#link 'new_request'  class="blocks-item-link"}}
-             <h2>Contactar un Agente de Soporte</h2>
+         {{#link 'new_request'  class="blocks-barra-link"}}
+             <h2>Contactar un agente de soporte</h2>
           {{/link}}
 
   </div>
@@ -15,28 +15,12 @@
     <section class="categories blocks">
       <ul class="blocks-list">
         {{#each categories}}
-          {{#if ../has_multiple_categories}}
             <li class="blocks-item">
               <a href='{{url}}' class="blocks-item-link">
                 <h4 class="blocks-item-title">{{name}}</h4>
                 <p class="blocks-item-description">{{excerpt description}}</p>
               </a>
             </li>
-          {{else}}
-            {{#each sections}}
-              <li class="blocks-item {{#if internal}}blocks-item-internal{{/if}}">
-                <a href='{{url}}' class="blocks-item-link">
-                  <h4 class="blocks-item-title">
-                    {{name}}
-                    {{#if internal}}
-                      <span class="icon-lock" title="{{t 'internal'}}"></span>
-                    {{/if}}
-                  </h4>
-                  <p class="blocks-item-description">{{excerpt description}}</p>
-                </a>
-              </li>
-            {{/each}}
-          {{/if}}
         {{/each}}
       </ul>
       {{pagination}}
@@ -49,7 +33,7 @@
   </section>
 
 <section class="section community">
-       <h2>Producto Destacado</h2>
+       <h2>Producto destacado</h2>
 
        <div class="community-image"></div>
      </section>
@@ -64,7 +48,7 @@
                        {{#link 'community' class='blocks-ayuda-link'}}
          <h2>{{t 'community'}}</h2>
       {{/link}}
-                <p class="blocks-ayuda-description">Wiki de la Comunidad</p>
+                <p class="blocks-ayuda-description">Wiki de la comunidad</p>
                    </li>
           <li class="ayuda-item">
                           {{#link 'help_center' class="blocks-ayuda-link"}}
@@ -75,10 +59,10 @@
 
             <li class="ayuda-item">
 
-         <h2 class="blocks-ayuda-link">Contactar un Agente</h2>
+         <h2 class="blocks-ayuda-link">Contactar un agente</h2>
                                           {{#link 'new_request'}}
 
-          {{/link}} <p class="blocks-ayuda-description">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un Agente de Soporte.</p>
+          {{/link}} <p class="blocks-ayuda-description">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un agente de soporte.</p>
                    </li>
       </ul>
       </section>

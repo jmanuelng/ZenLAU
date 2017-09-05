@@ -1,9 +1,30 @@
-<section class="section hero">
+{{#is category.name 'Móvil'}}
+
+<section class="section catMovil">
+  {{/is}}
+
+  {{#is category.name 'Tablet'}}
+
+<section class="section catTab">
+  {{/is}}
+
+  {{#is category.name 'Cómputo'}}
+
+<section class="section catComp">
+  {{/is}}
+
   <div class="hero-inner">
       <h1>¿Qué deseas consultar sobre {{category.name}}?</h1>
     {{search submit=false instant=true class='search search-full'}}
+             {{#link 'new_request'  class="blocks-barra-link"}}
+             <h2>Contactar un agente de soporte</h2>
+          {{/link}}
   </div>
 </section>
+
+
+
+
 
 
 <div class="container">
@@ -32,10 +53,9 @@
 
     <section class="section community">
       {{#link 'help_center'}}
-             <h2>{{t 'knowledge_base'}}</h2>
+             <h2 class='blocks-ayuda-link'>{{t 'knowledge_base'}}</h2>
           {{/link}}
-        <span>Compendio de artículos con tips, consejos y fórmulas para optimizar tu equipo Lanix</span>
-   </section>
+     </section>
 
 
 {{#if help_center.community_enabled}}
@@ -49,7 +69,7 @@
 {{/if}}
 
     <section class="section community">
-       <h2>Contactar un Agente</h2>
+       <h2>Contactar un agente</h2>
       <ul>
         <li class="agentefont"> <i class="fa fa-handshake-o fa-5x "></i></li></ul>
 {{#link 'new_request'}}

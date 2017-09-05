@@ -107,3 +107,5 @@ $(document).ready(function() {
     this.setAttribute("aria-expanded", !isExpanded);
   });
 });
+
+//Código Tabs
