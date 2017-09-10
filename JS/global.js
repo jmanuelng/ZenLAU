@@ -4,6 +4,14 @@
 
 $(document).ready(function() {
 
+  var txt =document.getElementsByClassName('texto');
+  for (var i = 0, len = txt.length; i < len; i++) {
+   var texto=txt[i].innerHTML;
+   var rex = /(<([^>]+)>)/ig;
+   var contenido=  texto.replace(rex , "");
+   txt[i].innerHTML=contenido.substring(0,150);
+}
+
   // social share popups
   $(".share a").click(function(e) {
     e.preventDefault();
@@ -107,3 +115,5 @@ $(document).ready(function() {
     this.setAttribute("aria-expanded", !isExpanded);
   });
 });
+
+//Código Tabla catalogo

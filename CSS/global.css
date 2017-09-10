@@ -996,7 +996,7 @@ ul {
 
 .community,
 .activity {
-  border-top: 1px solid #ddd;
+ /* border-top: 1px solid #ddd;*/
   padding: 15px 0;
 }
 
@@ -4812,4 +4812,97 @@ margin-top:2rem;
     .table-responsive-vertical .table-hover.table-mc-orange> tbody > tr > td:hover {
         background-color: $color_1;
     }
+}
+
+/** Imagen de Producto destacado Index **/
+
+.destacado-image {
+  min-height: 300px;
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-l900.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+/**Búsquedas frecuentes**/
+
+
+.blocks-item-descriptionFreq {
+  font-weight: 300;
+  margin: 0;
+  color:$color_4;
+}
+
+.blocks-item-descriptionFreq:not(:empty) {
+  margin-top: 10px;
+}
+
+/***** Promoted articles *****/
+.frecuente-articles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.frecuente{
+padding:15px 0;
+  margin-bottom: 60px;
+}
+
+.frecuente h2{
+text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .frecuente-articles {
+    flex-direction: row;
+  }
+}
+
+.frecuente-articles-item {
+  flex: 1 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .frecuente-articles-item {
+    align-self: flex-end;
+    flex: 0 0 auto;
+    padding-right: 30px;
+    width: 49%;
+    max-width:49%;
+    /* Two columns on desktop */
+  }
+  [dir="rtl"] .frecuente-articles-item {
+    padding: 0 0 0 30px;
+  }
+}
+
+/*.frecuente-articles-item:nth-child(3n) {
+  padding-right: 0;
+}*/
+
+.frecuente-articles-item a {
+  /*border-bottom: 1px solid #ddd;*/
+  color: $color_3;
+  display: block;
+  padding: 15px 0;
+}
+
+.frecuente-articles-item:last-child a {
+  border: 0;
+}
+
+@media (min-width: 1024px) {
+  .frecuente-articles-item:last-child a {
+   /* border-bottom: 1px solid #ddd;*/
+  }
+}
+
+.frecuente-texto{
+  width: 100%;
+  text-align:justify;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    color:$color_4;
 }
