@@ -22,12 +22,11 @@
   </div>
 </section>
 
-
-
-
-
-
 <div class="container">
+    <nav class="sub-nav">
+    {{breadcrumbs}}
+  </nav>
+
   <section class="section knowledge-base">
     <section class="categories blocks">
       <ul class="blocks-list">
@@ -43,19 +42,59 @@
     </section>
    </section>
 
-  <nav class="sub-nav">
-    {{breadcrumbs}}
-  </nav>
+  <section class="articles frecuente">
+        <h2>Búsquedas frecuentes</h2>
+        <ul class="article-list frecuente-articles">
 
+          {{#each sections}}
+        {{#is name 'Catálogo'}}
+        {{else}}
+                     {{#if articles}}
+            {{#each articles}}
+                                    {{#if promoted}}
+           <li class="frecuente-articles-item">
+              <a href="{{url}}">
+                {{title}}
+              </a>
+              <div class="texto frecuente-textoSeccion" >
+               <p>{{body}}</p>
+              </div>
+            </li>
+          {{else}}
 
+          {{/if}}
+          {{/each}}
+          {{/if}}
+          {{/is}}
+          {{/each}}
+        </ul>
+      </section>
 
+      <section class="articles frecuente">
+        <h2>{{t 'knowledge_base'}}</h2>
+        <ul class="article-list frecuente-articles">
 
-
-    <section class="section community">
-      {{#link 'help_center'}}
-             <h2 class='blocks-ayuda-link'>{{t 'knowledge_base'}}</h2>
-          {{/link}}
-     </section>
+          {{#each sections}}
+        {{#is name 'Catálogo'}}
+        {{else}}
+                     {{#if articles}}
+            {{#each articles}}
+                                    {{#if promoted}}{{else}}
+            <li class="frecuente-articles-item">
+              <a href="{{url}}">
+                {{title}}
+              </a>
+              <div class="texto frecuente-textoSeccion" >
+               <p>{{body}}</p>
+              </div>
+            </li>
+          {{/if}}
+          {{/each}}
+          {{/if}}
+          {{/is}}
+          {{/each}}
+        </ul>
+      </section>
 
 
 {{#if help_center.community_enabled}}

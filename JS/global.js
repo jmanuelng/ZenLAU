@@ -9,7 +9,7 @@ $(document).ready(function() {
    var texto=txt[i].innerHTML;
    var rex = /(<([^>]+)>)/ig;
    var contenido=  texto.replace(rex , "");
-   txt[i].innerHTML=contenido.substring(0,150);
+   txt[i].innerHTML=(contenido.substring(0,150)).concat("...");
 }
 
   // social share popups
@@ -114,6 +114,31 @@ $(document).ready(function() {
     var isExpanded = this.getAttribute("aria-expanded") === "true";
     this.setAttribute("aria-expanded", !isExpanded);
   });
+
+
+
+if( document.location.href.indexOf('section') == -1 ) {
+var categories = $('ul.article-list');
+for (var j = categories.length - 1; j >= 0; j--) {
+var articles = $(categories[j]).find('li'),
+nativeMore = $(categories[j]).siblings('.see-all-articles');
+if ( articles.length > 4 ) {
+for (var k = 4; k < articles.length; k++ ) {
+$(articles[k]).hide();
+}
+var moreLink = $(categories[j]).parent().find('h3 a').attr('href'),
+linkText = '';
+if( articles.length <= 4 && nativeMore.length == 0 ) {
+linkText += "See all " + articles.length + " articles";
+}
+
+}
+}
+}
+
+
+
+
 });
 
 //Código Tabla catalogo

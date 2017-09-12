@@ -38,8 +38,22 @@
 
 
 {{else}}
-<section class="section hero">
+
+  {{#is section.name 'Funcionalidad'}}
+<section class="section func">
 <div class="hero-inner">
+  {{/is}}
+
+      {{#is section.name 'Configuración'}}
+<section class="section conf">
+<div class="hero-inner">
+  {{/is}}
+
+
+      {{#is section.name 'Reparación y Repuestos'}}
+<section class="section repa">
+<div class="hero-inner">
+  {{/is}}
     <h1>¿Buscas algo más específico?</h1>
   {{search submit=false instant=true class='search search-full'}}
            {{#link 'new_request'  class="blocks-barra-link"}}
@@ -54,9 +68,8 @@
   {{breadcrumbs}}
 </nav>
     <section class="section">
-    {{#link 'help_center'}}
-           <h2 class='blocks-ayuda-link'>{{t 'knowledge_base'}}  {{section.name}}</h2>
-        {{/link}}
+           <h2 class='blocks-ayuda-link'> {{section.name}}</h2>
+
 {{#if section.description}}
         <p class="page-header-description">{{section.description}}</p>
       {{/if}}
@@ -68,6 +81,9 @@
               <span data-title="{{t 'promoted'}}" class="icon-star"></span>
             {{/if}}
             <a href="{{url}}" class="article-list-link">{{title}}</a>
+                          <div class="texto frecuente-textoSeccion" >
+             <p>{{body}}</p>
+            </div>
           </li>
         {{/each}}
       </ul>
@@ -79,17 +95,6 @@
 
     {{pagination}}
    </section>
-
-
-{{#if help_center.community_enabled}}
-<section class="section community">
-    <h2>{{t 'community'}} {{section.name}}</h2>
-    {{#link 'community' class='community-link'}}
-      {{t 'join_conversation'}}
-    {{/link}}
-
-</section>
-{{/if}}
 
   <section class="section community">
      <h2>Contactar un agente</h2>
