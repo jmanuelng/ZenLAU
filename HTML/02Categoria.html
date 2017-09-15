@@ -1,6 +1,6 @@
 {{#is category.name 'Móvil'}}
 
-<section class="section catMovil">
+<section class="section cateMovil">
   {{/is}}
 
   {{#is category.name 'Tablet'}}
@@ -98,13 +98,11 @@
 
 
 {{#if help_center.community_enabled}}
- <section class="section community">
-      <h2>{{t 'community'}}</h2>
-      {{#link 'community' class='community-link'}}
-        {{t 'join_conversation'}}
-      {{/link}}
+    <section class="community-activity activity">
+     {{recent_activity scope='community'}}
+  </section>
 
- </section>
+
 {{/if}}
 
     <section class="section community">
