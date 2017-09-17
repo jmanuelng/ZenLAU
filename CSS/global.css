@@ -19,7 +19,7 @@ body {
 
 @media (min-width: 1024px) {
   body > main {
-    min-height: 65vh;
+    min-height: 81vh;
   }
 }
 
@@ -670,7 +670,7 @@ ul {
   color: lighten($color_3, 20%);
   display: inline;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 15px;
   max-width: 450px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -730,7 +730,7 @@ ul {
 }
 
 .search-full input[type="search"] {
-  border: 1px solid #fff;
+  border: 1px solid lightgray;
 }
 
 /***** Hero component *****/
@@ -4215,8 +4215,9 @@ color:$color_1;
   margin: 0 10% 0 auto;
 }
 
-.catMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-moviles.jpg);
+/**Este es el banner para la metacategoria movil*/
+.cateMovil {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -4225,21 +4226,32 @@ color:$color_1;
   width: 100%;
 }
 
-.catTab {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-tablets3.jpg);
+/**Este es el banner para los productos moviles**/
+.catMovil {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
   background-position: center;
   background-size: cover;
-  height: 350px;
+  height: 420px;
+  padding: 0 20px;
+  text-align: left;
+  width: 100%;
+}
+
+.catTab {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/cubolanix.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
   padding: 0 20px;
   text-align: right;
   width: 100%;
 }
 
 .catComp {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/meta-computadores2.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner8.jpg);
   background-position: center;
   background-size: cover;
-  height: 350px;
+  height: 420px;
   padding: 0 20px;
   text-align: center;
   width: 100%;
@@ -4357,7 +4369,7 @@ margin-top:2rem;
 .tab_container {
 	width: 98%;
 	margin: 0 auto;
-	padding-top: 70px;
+	padding-top: 30px;
 	position: relative;
 }
 
@@ -4402,6 +4414,11 @@ margin-top:2rem;
 .tab_container .tab-content h3  {
   text-align: center;
 }
+
+.tab_container a  {
+ color:$color_1;
+}
+
 
 .tab_container [id^="tab"]:checked + label {
   background: #fff;
@@ -4461,10 +4478,10 @@ margin-top:2rem;
 
 /** Estilos de Sección Catálogo **/
 .herocatalogo {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/cafe.png);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner15.jpg);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 350px;
   padding: 0 20px;
   text-align: center;
   width: 100%;
@@ -4931,7 +4948,7 @@ text-align: center;
 /**Encabezados de Sección**/
 
 .func {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/cubolanix.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner2-a.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -4941,7 +4958,7 @@ text-align: center;
 }
 
 .conf {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/compunegro6.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner14.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -4959,4 +4976,130 @@ text-align: center;
   padding: 0 20px;
   text-align: center;
   width: 100%;
+}
+
+/**Modificacion clase bloques para catalogo*/
+
+.blocks-listCat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+
+}
+
+@media (min-width: 768px) {
+  .blocks-listCat {
+    margin: 0 -15px;
+  }
+}
+
+.blocks-itemCat {
+  border: 1px solid $color_1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $color_1;
+  display: flex;
+  flex: 1 0 200px;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 30px;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .blocks-itemCat {
+    margin: 0 30px 60px;
+  }
+}
+
+.blocks-itemCat:hover, .blocks-itemCat:focus, .blocks-itemCat:active {
+  background-color: $color_1;
+  background-image:none;
+}
+
+.blocks-itemCat:hover *, .blocks-itemCat:focus *, .blocks-itemCat:active * {
+  color: $color_2;
+  text-decoration: none;
+font-size:15px;
+}
+
+.blocks-itemCat-internal {
+  background-color: transparent;
+  border: 1px solid #ddd;
+}
+
+.blocks-itemCat-internal .icon-lock::before {
+  content: "\1F512";
+  font-size: 15px;
+  bottom: 5px;
+  position: relative;
+}
+
+.blocks-itemCat-internal a {
+  color: $color_3;
+
+}
+
+.blocks-itemCat-link {
+  color: $color_1;
+  padding: 20px 30px;
+
+
+}
+
+.blocks-itemCat-link:hover, .blocks-itemCat-link:focus, .blocks-itemCat-link:active {
+  text-decoration: none;
+
+}
+
+.blocks-itemCat-title {
+  margin-bottom: 0;
+        font-size:0;
+}
+
+.blocks-itemCat-description {
+  font-weight: 300;
+  margin: 0;
+}
+
+.blocks-itemCat-description:not(:empty) {
+  margin-top: 10px;
+}
+
+.catalogoItem{
+    background-position: center;
+    background-size: contain;
+    height:300px;
+  background-repeat: no-repeat;
+
+}
+
+
+.catalogoItem {
+  position: relative;
+
+}
+
+.catalogoItem:before{
+  position: absolute;
+  content:" ";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display: none;
+  z-index:0;
+}
+
+.catalogoItem:hover:before{
+  display: block;
+  background-color: $color_1;
+}
+
+.catalogoItem * {
+    position: relative;
+    /* hack */
 }

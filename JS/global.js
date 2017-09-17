@@ -10,7 +10,20 @@ $(document).ready(function() {
    var rex = /(<([^>]+)>)/ig;
    var contenido=  texto.replace(rex , "");
    txt[i].innerHTML=(contenido.substring(0,150)).concat("...");
+
 }
+
+
+   var catItems=document.getElementsByClassName('catalogoItem');
+
+    for (var i = 0, len = catItems.length; i < len; i++) {
+
+        var string ='//p4.zdassets.com/hc/theme_assets/2025662/115000009683/'+(catItems[i].id).replace(" ","_")+'.png';
+   catItems[i].style.backgroundImage = "url('" + string + "')";
+catItems[i].src = string;
+
+}
+
 
   // social share popups
   $(".share a").click(function(e) {
@@ -115,8 +128,7 @@ $(document).ready(function() {
     this.setAttribute("aria-expanded", !isExpanded);
   });
 
-
-
+  /**Limitar el número de publicaciones destacadas**/
 if( document.location.href.indexOf('section') == -1 ) {
 var categories = $('ul.article-list');
 for (var j = categories.length - 1; j >= 0; j--) {
@@ -135,10 +147,4 @@ linkText += "See all " + articles.length + " articles";
 }
 }
 }
-
-
-
-
 });
-
-//Código Tabla catalogo
