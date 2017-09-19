@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     for (var i = 0, len = catItems.length; i < len; i++) {
 
-        var string ='//p4.zdassets.com/hc/theme_assets/2025662/115000009683/'+(catItems[i].id).replace(" ","_")+'.png';
+        var string ='//p4.zdassets.com/hc/theme_assets/2025662/115000009683/'+(catItems[i].id).replace(new RegExp(' ', 'g'), '_')+'.png';
    catItems[i].style.backgroundImage = "url('" + string + "')";
 catItems[i].src = string;
 
@@ -128,6 +128,9 @@ catItems[i].src = string;
     this.setAttribute("aria-expanded", !isExpanded);
   });
 
+
+
+
   /**Limitar el número de publicaciones destacadas**/
 if( document.location.href.indexOf('section') == -1 ) {
 var categories = $('ul.article-list');
@@ -147,4 +150,10 @@ linkText += "See all " + articles.length + " articles";
 }
 }
 }
+
+
+
+
 });
+
+//Código Tabla catalogo

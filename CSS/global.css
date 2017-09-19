@@ -4996,7 +4996,7 @@ text-align: center;
 }
 
 .blocks-itemCat {
-  border: 1px solid $color_1;
+  /*border: 1px solid $color_1;*/
   border-radius: 4px;
   box-sizing: border-box;
   color: $color_1;
@@ -5018,6 +5018,9 @@ text-align: center;
 .blocks-itemCat:hover, .blocks-itemCat:focus, .blocks-itemCat:active {
   background-color: $color_1;
   background-image:none;
+  border: 1px solid $color_1;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .blocks-itemCat:hover *, .blocks-itemCat:focus *, .blocks-itemCat:active * {
