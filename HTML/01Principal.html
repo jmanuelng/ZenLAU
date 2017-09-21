@@ -53,9 +53,36 @@
 
 
 
-<section class="section community">
+<section class="section">
        <h2>Producto destacado</h2>
-    <div class="destacado-image"></div>
+
+<div class="carouselSection">
+<ul class="carousel">
+    <li class="itemsC main-pos" id="1">
+      <a target="_blank" href='http://tienda.mercadolibre.com.co/lanix'>
+ <img src="//p4.zdassets.com/hc/theme_assets/2025662/115000009683/mercadolibre2.jpg"/></a>
+
+     </li>
+    <li class="itemsC right-pos" id="2">
+           <img src="//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-L910_-_copia.jpg" />
+    </li>
+    <li class="itemsC back-pos" id="3">
+      <img src="//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-LT510.jpg"/>
+    </li>
+    <li class="itemsC back-pos" id="4"> <img src="//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-LT520.jpg" /></li>
+    <li class="itemsC back-pos" id="5">
+     <img src="//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-LT520.jpg"/>
+    </li>
+</ul>
+  <!--span>
+  <input type="button" value="Prev" id="prev">
+  <input type="button" value="Next" id="next">
+</span-->
+
+
+   </div>
+
+
      </section>
 
 
@@ -80,10 +107,11 @@
 
             <li class="ayuda-item">
 
-         <h2 class="blocks-ayuda-link">Contactar un agente</h2>
-                                          {{#link 'new_request'}}
+             <h2 class="blocks-ayuda-link">
+               {{#link 'new_request' class='submit-a-request'}}Contactar un agente  {{/link}}</h2>
 
-              {{/link}}<i class="fa fa-handshake-o fa-5x "></i> <p class="blocks-ayuda-description">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un agente de soporte.</p>
+        <i class="fa fa-handshake-o fa-5x ">
+                                          </i> <p class="blocks-ayuda-description">¿Necesitas ayuda con tu inquietud? Completa el formulario para ser atendido por un agente de soporte.</p>
                    </li>
       </ul>
       </section>

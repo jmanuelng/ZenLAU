@@ -4198,7 +4198,7 @@ color:$color_1;
 /***** Ticket *****/
 
 .ticketSoporte {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/girl-2618562_1920_izq2.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/contacto.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -4217,7 +4217,7 @@ color:$color_1;
 
 /**Este es el banner para la metacategoria movil*/
 .cateMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner42.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -4231,14 +4231,14 @@ color:$color_1;
   background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
   background-position: center;
   background-size: cover;
-  height: 420px;
+  height: 450px;
   padding: 0 20px;
   text-align: left;
   width: 100%;
 }
 
 .catTab {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/cubolanix.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/metacategoria_tablet1_-_copia.jpg);
   background-position: center;
   background-size: cover;
   height: 420px;
@@ -4478,7 +4478,7 @@ margin-top:2rem;
 
 /** Estilos de Sección Catálogo **/
 .herocatalogo {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner15.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Cat_logo.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -4832,15 +4832,6 @@ margin-top:2rem;
     }
 }
 
-/** Imagen de Producto destacado Index **/
-
-.destacado-image {
-  min-height: 300px;
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-l900.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  max-width: 100%;
-}
 
 /**Búsquedas frecuentes**/
 
@@ -4969,7 +4960,7 @@ text-align: center;
 }
 
 .repa {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/func2.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Reparaci_n-y-Repuesto.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -5105,4 +5096,133 @@ font-size:15px;
 .catalogoItem * {
     position: relative;
     /* hack */
+}
+
+/**CSS slideshow*/
+
+
+.carouselSection {
+ width: 900px;
+  height: 21em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel img{
+height:-webkit-fill-available;
+  width:auto;
+  position:center;
+}
+
+.carousel li {
+  width: 100%;
+  height: 300px;
+  background: #333;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+
+.carousel li p {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  text-align: center;
+  margin-top: 1.175em;
+}
+
+.itemsC {
+  position: absolute;
+}
+
+.main-pos {
+  margin-left: 2em !important;
+  z-index: 3000;
+  /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+}
+
+.left-pos {
+  opacity: .3;
+  margin-left: -17em !important;
+  z-index: 1000;
+  -webkit-transform: scale(.75);
+  -moz-transform: scale(.75);
+  transform: scale(.75);
+}
+
+.back-pos {
+  margin-left: 2em !important;
+  opacity: .05;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  transform: scale(.5);
+}
+
+.right-pos {
+  opacity: .3;
+  margin-left:  21em !important;
+  z-index: 1000;
+  -webkit-transform: scale(.75);
+  -moz-transform: scale(.75);
+  transform: scale(.75);
+}
+
+.carouselSection span {
+  position: relative;
+  margin: 0 auto;
+  left: 17em;
+  top: 20em;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .carouselSection {
+ width:320px;
+  height: 10em;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel li {
+  width:250px;
+  height: 150px;
+  background: #333;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  }
+
+.left-pos {
+  opacity: .3;
+  margin-left: -3em !important;
+  z-index: 1000;
+  -webkit-transform: scale(.75);
+  -moz-transform: scale(.75);
+  transform: scale(.75);
+}
+
+.back-pos {
+  margin-left: 2em !important;
+  opacity: .05;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  transform: scale(.5);
+}
+
+.right-pos {
+  opacity: .3;
+  margin-left:  8em !important;
+  z-index: 1000;
+  -webkit-transform: scale(.75);
+  -moz-transform: scale(.75);
+  transform: scale(.75);
+}
+}
+
+.submit-a-request{
+color:$color_3;
 }
