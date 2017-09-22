@@ -5229,14 +5229,14 @@ height:inherit;
 
   .carouselSection {
  width:320px;
-  height: 10em;
+  height: 300px;
   margin: 0 auto;
   position: relative;
 }
 
 .carousel li {
   width:250px;
-  height: 150px;
+  height: 300px;
   background: #333;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;

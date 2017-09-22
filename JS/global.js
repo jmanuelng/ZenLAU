@@ -151,9 +151,6 @@ linkText += "See all " + articles.length + " articles";
 }
 
 
-
-
-
   //slideshow style interval
 var autoSwap = setInterval( swap,3500);
 
@@ -260,4 +257,5 @@ $('li').click(function() {
     swap('clockwise');
   }
 });
+
    });
