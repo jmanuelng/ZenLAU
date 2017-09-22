@@ -4,7 +4,6 @@
 
 $(document).ready(function() {
 
-
   var txt =document.getElementsByClassName('texto');
   for (var i = 0, len = txt.length; i < len; i++) {
    var texto=txt[i].innerHTML;
@@ -261,6 +260,4 @@ $('li').click(function() {
     swap('clockwise');
   }
 });
-
-
    });

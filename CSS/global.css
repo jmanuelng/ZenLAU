@@ -5109,7 +5109,7 @@ font-size:15px;
 }
 
 .carousel img{
-height:-webkit-fill-available;
+height:inherit;
   width:auto;
   position:center;
 }
@@ -5225,4 +5225,21 @@ height:-webkit-fill-available;
 
 .submit-a-request{
 color:$color_3;
+}
+
+.image_title{
+  background: $color_2;
+  position:absolute;
+  left:0;
+  opacity:0.75;
+  bottom:25px;
+  width:max-content;
+}
+
+.image_title a{
+  display: block;
+  font-weight:bold;
+  color:$color_1;
+  text-decoration: none;
+  padding:20px;
 }
