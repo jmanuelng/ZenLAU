@@ -22,6 +22,39 @@ background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/ban
 background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-X210.jpg');
 }
 
+/**Encabezados de Sección**/
+
+.func {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner2-a2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.conf {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner14.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+  color:white;
+}
+
+.repa {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Reparaci_n-y-Repuesto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
 .slide1img{
 background-repeat: no-repeat;
 background-position:center;
@@ -30,22 +63,70 @@ width: auto; /*or your image's width*/
 height:300px; /*or your image's height*/
 }
 
+/**Este es el banner para la metacategoria movil*/
+.cateMovil {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner42.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  padding: 0 20px;
+  text-align: left;
+  width: 100%;
+}
 
+/**Este es el banner para los productos moviles**/
+.catMovil {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  padding: 0 20px;
+  text-align: left;
+  width: 100%;
+}
 
+.catTab {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/metacategoria_tablet1_-_copia.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+  padding: 0 20px;
+  text-align: right;
+  width: 100%;
+}
 
+.catComp {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner8.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 420px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
 
+}
 
+/**Banner de la sección catalogo**/
+.herocatalogo {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Cat_logo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
+/**Ticket banner*/
+.ticketSoporte {
+  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  padding: 0 20px;
+  text-align: right;
+  width: 100%;
+}
 
 /***** Base *****/
 
@@ -4245,16 +4326,6 @@ color:$color_1;
 }
 /***** Ticket *****/
 
-.ticketSoporte {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/contacto.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-  padding: 0 20px;
-  text-align: right;
-  width: 100%;
-}
-
 .ticketSoporte-inner {
   position: relative;
   top: 50%;
@@ -4263,48 +4334,7 @@ color:$color_1;
   margin: 0 10% 0 auto;
 }
 
-/**Este es el banner para la metacategoria movil*/
-.cateMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner42.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-  padding: 0 20px;
-  text-align: left;
-  width: 100%;
-}
 
-/**Este es el banner para los productos moviles**/
-.catMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 450px;
-  padding: 0 20px;
-  text-align: left;
-  width: 100%;
-}
-
-.catTab {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/metacategoria_tablet1_-_copia.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 420px;
-  padding: 0 20px;
-  text-align: right;
-  width: 100%;
-}
-
-.catComp {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner8.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 420px;
-  padding: 0 20px;
-  text-align: center;
-  width: 100%;
-
-}
 
 .catComp h1 {
   color:#fff;
@@ -4525,15 +4555,6 @@ margin-top:2rem;
 }
 
 /** Estilos de Sección Catálogo **/
-.herocatalogo {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Cat_logo.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 350px;
-  padding: 0 20px;
-  text-align: center;
-  width: 100%;
-}
 
 .herocatalogo-inner {
   position: relative;
@@ -4984,38 +5005,7 @@ text-align: center;
   text-align:left;
 }
 
-/**Encabezados de Sección**/
 
-.func {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner2-a.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  padding: 0 20px;
-  text-align: center;
-  width: 100%;
-}
-
-.conf {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner14.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  padding: 0 20px;
-  text-align: center;
-  width: 100%;
-  color:white;
-}
-
-.repa {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Reparaci_n-y-Repuesto.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  padding: 0 20px;
-  text-align: center;
-  width: 100%;
-}
 
 /**Modificacion clase bloques para catalogo*/
 
