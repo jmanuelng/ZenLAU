@@ -1,4 +1,52 @@
 @charset "UTF-8";
+
+
+/**********************************/
+/*URL a imagenes a través del site*/
+/**********************************/
+
+/** Slideshow Index **/
+.img1{
+background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/mercadolibre2.jpg');
+}
+.img2{
+background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-L910.jpg');
+}
+.img3{
+background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-LT510.jpg');
+}
+.img4{
+background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-L1200.jpg');
+}
+.img5{
+background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-X210.jpg');
+}
+
+.slide1img{
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+width: auto; /*or your image's width*/
+height:300px; /*or your image's height*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***** Base *****/
 
 *{
@@ -5140,6 +5188,7 @@ height:inherit;
 .main-pos {
   margin-left: 2em !important;
   z-index: 3000;
+
   /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
 }
 
@@ -5227,6 +5276,7 @@ height:inherit;
 color:$color_3;
 }
 
+
 .image_title{
   background: $color_2;
   position:absolute;
@@ -5238,7 +5288,7 @@ color:$color_3;
 
 .image_title a{
   display: block;
-  font-weight:bold;
+
   color:$color_1;
   text-decoration: none;
   padding:20px;

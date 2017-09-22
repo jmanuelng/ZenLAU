@@ -136,13 +136,13 @@ var categories = $('ul.article-list');
 for (var j = categories.length - 1; j >= 0; j--) {
 var articles = $(categories[j]).find('li'),
 nativeMore = $(categories[j]).siblings('.see-all-articles');
-if ( articles.length > 4 ) {
-for (var k = 4; k < articles.length; k++ ) {
+if ( articles.length > 6 ) {
+for (var k = 6; k < articles.length; k++ ) {
 $(articles[k]).hide();
 }
 var moreLink = $(categories[j]).parent().find('h3 a').attr('href'),
 linkText = '';
-if( articles.length <= 4 && nativeMore.length == 0 ) {
+if( articles.length <= 6 && nativeMore.length == 0 ) {
 linkText += "See all " + articles.length + " articles";
 }
 
