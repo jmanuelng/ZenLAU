@@ -12,9 +12,9 @@
         <span class="icon-lock" title="{{t 'internal'}}"></span>
       {{/if}}
     </h1>
-    <span class="post-to-community page-header-item">
+    <!--span class="post-to-community page-header-item">
       {{link 'new_post' role='button' topic_id=topic.id class='button button-large'}}
-    </span>
+    </span-->
   </header>
   <div class="community-header">
     <p class="page-header-description">{{topic.description}}</p>
@@ -103,5 +103,13 @@
 
 <section class="container community-footer">
   <h4>{{t 'suggest_new_post'}}</h4>
-  {{link 'new_post' role='button' class='button-large'}}
+      <section class="section community">
+       <h2>Contactar un agente</h2>
+
+{{#link 'new_request'}}
+     <ul>
+        <li class="agentefont"> <i class="fa fa-handshake-o fa-4x "></i></li></ul>
+          {{/link}}
+    </section>
+  <!--p>{{link 'new_post' role='button' class='button-large'}}</p!-->
 </section>

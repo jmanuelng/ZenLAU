@@ -204,10 +204,22 @@
     </div>
 
     <section class="post-sidebar">
-      <h3 class="sidebar-title">{{t 'suggest_new_post'}}</h3>
+      <!--h3 class="sidebar-title">{{t 'suggest_new_post'}}</h3>
       <span class="post-to-community">
         {{link 'new_post' role='button' class='button-large'}}
-      </span>
+      </span-->
+      <section class="container community-footer">
+  <h4>{{t 'suggest_new_post'}}</h4>
+      <section class="section community">
+       <h3>Contactar un agente</h3>
+
+{{#link 'new_request'}}
+     <ul>
+        <li class="agentefontS"> <i class="fa fa-handshake-o fa-4x "></i></li></ul>
+          {{/link}}
+    </section>
+  <!--p>{{link 'new_post' role='button' class='button-large'}}</p!-->
+</section>
     </section>
   </div>
 </div>

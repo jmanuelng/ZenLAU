@@ -23,9 +23,9 @@
         {{/link}}
       </span>
     </div>
-    <span class="page-header-item post-to-community">
+    <!--span class="page-header-item post-to-community">
       {{link 'new_post' role='button' class='button-large'}}
-    </span>
+    </span-->
   </header>
 
   {{#unless topics}}
@@ -78,8 +78,16 @@
     {{/if}}
   </section>
 
-  <section class="container community-footer">
-    <h4>{{t 'suggest_new_post'}}</h4>
-    {{link 'new_post' role='button' class='button-large'}}
-  </section>
+<section class="container community-footer">
+  <h4>{{t 'suggest_new_post'}}</h4>
+      <section class="section community">
+       <h2>Contactar un agente</h2>
+
+{{#link 'new_request'}}
+     <ul>
+        <li class="agentefont"> <i class="fa fa-handshake-o fa-4x "></i></li></ul>
+          {{/link}}
+    </section>
+  <!--p>{{link 'new_post' role='button' class='button-large'}}</p!-->
+</section>
 </div>

@@ -119,9 +119,21 @@
        </div>
      {{/with}}
 
-     <div class="article-more-questions">
+     <!--div class="article-more-questions">
        {{request_callout}}
-     </div>
+     </div-->
+
+   <section class="container community">
+<h4>¿No encontraste lo que buscabas?</h4>
+   <section class="section community">
+    <h3>Contactar un agente</h3>
+{{#link 'new_request'}}
+  <ul>
+     <li class="agentefontS"> <i class="fa fa-handshake-o fa-4x "></i></li></ul>
+       {{/link}}
+ </section>
+
+ </section>
      <div class="article-return-to-top">
        <a href="#article-container">{{t 'return_to_top'}}<span class="icon-arrow-up"></span></a>
      </div>
@@ -131,7 +143,7 @@
      {{recent_articles}}
      {{related_articles}}
    </section>
-   <div class="article-comments" id="article-comments">
+   <!--div class="article-comments" id="article-comments">
      <section class="comments">
        <header class="comment-overview">
          <h3 class="comment-heading">
@@ -209,7 +221,7 @@
        </ul>
 
        {{pagination}}
-
+<p>
        {{#form 'comment' class='comment-form'}}
          <div class="avatar comment-avatar">
            {{user_avatar class='user-avatar'}}
@@ -224,8 +236,10 @@
 
        <p class="comment-callout">{{comment_callout}}</p>
      </section>
-   </div>
+   </div!-->
  </article>
+
+
 
  {{/is}}
 </div>

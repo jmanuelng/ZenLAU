@@ -11,10 +11,16 @@
   </header>
 
   <div class="search-results">
-    <section class="search-results-column">
-      <h3 class="search-results-subheading">
-        {{t 'knowledge_base'}}
-      </h3>
+
+    <div class="tab_container">
+			<input class="input-soporte" id="tab1" type="radio" name="tabs"  checked>
+			<label for="tab1" class="label-soporte"><span>Base de Conocimientos</span></label>
+
+			<input class="input-soporte" id="tab2" type="radio" name="tabs">
+			<label for="tab2" class="label-soporte"><span>Comunidad</span></label>
+
+<section id="content1" class="tab-content section-soporte">
+ <section class="search-results-column">
       {{#if article_results}}
         <ul class="search-results-list">
           {{#each article_results}}
@@ -42,6 +48,7 @@
             </li>
           {{/each}}
         </ul>
+        {{pagination}}
       {{else}}
         <p>
           {{t 'no_results' query=query}}
@@ -50,13 +57,14 @@
           {{/link}}
         </p>
       {{/if}}
+
     </section>
 
-    {{#if help_center.community_enabled}}
+			</section>
+
+			<section id="content2" class="tab-content  section-soporte">
+		      	 {{#if help_center.community_enabled}}
       <section class="search-results-column">
-        <h3 class="search-results-subheading">
-          {{t 'community'}}
-        </h3>
         {{#if post_results}}
           <ul class="search-results-list">
             {{#each post_results}}
@@ -86,6 +94,7 @@
               </li>
             {{/each}}
           </ul>
+                  {{pagination}}
         {{else}}
           <p>
             {{t 'no_results' query=query}}
@@ -95,9 +104,11 @@
           </p>
         {{/if}}
       </section>
-    {{/if}}
 
+    {{/if}}
+			</section>
+		</div>
   </div>
 
-  {{pagination}}
+
 </div>

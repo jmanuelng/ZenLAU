@@ -1324,8 +1324,8 @@ ul {
 
 @media (min-width: 1024px) {
   .article {
-    flex: 1 0 66%;
-    max-width: 66%;
+    flex: 1 0 76%;
+    max-width: 76%;
     min-width: 640px;
     padding: 0 30px;
   }
@@ -1518,7 +1518,7 @@ ul {
 }
 
 .article-relatives > * {
-  flex: 1 0 auto;
+  flex: 1 0 0 auto;
   margin-right: 0;
 }
 
@@ -4244,6 +4244,11 @@ ul {
 .agentefont{
 color:$color_1;
  font-size:2.2em;
+}
+
+.agentefontS{
+color:$color_1;
+ font-size:1em;
 }
 
 /***** Sección Ayudas Index *****/

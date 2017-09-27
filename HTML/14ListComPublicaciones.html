@@ -23,9 +23,9 @@
         {{/link}}
       </span>
     </span>
-    <span class="post-to-community">
+    <!--span class="post-to-community">
       {{link 'new_post' role='button' class='button-large'}}
-    </span>
+    </span-->
   </header>
 
   <div class="topic-header">
@@ -134,6 +134,13 @@
 
   <section class="container community-footer">
     <h4>{{t 'suggest_new_post'}}</h4>
-    {{link 'new_post' role='button' class='button-large'}}
+          <section class="section community">
+       <h3>Contactar un agente</h3>
+
+{{#link 'new_request'}}
+     <ul>
+        <li class="agentefont"> <i class="fa fa-handshake-o fa-4x "></i></li></ul>
+          {{/link}}
+    </section>
   </section>
 </div>
