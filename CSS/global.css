@@ -7,25 +7,25 @@
 
 /** Slideshow Index **/
 .img1{
-background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/mercadolibre2.jpg');
+background-image:url('//p4.zdassets.com/hc/theme_assets/598858/200073509/banner_octubre.jpg');
 }
 .img2{
-background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-L910.jpg');
+background-image:url('//p4.zdassets.com/hc/theme_assets/598858/200073509/Mercado_libre_banner_V.jpg');
 }
 .img3{
-background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-LT510.jpg');
+background-image:url('//p4.zdassets.com/hc/theme_assets/598858/200073509/Mercado_libre_banner.jpg');
 }
 .img4{
-background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-L1200.jpg');
+background-image:url('//p4.zdassets.com/hc/theme_assets/598858/200073509/Mercado_libre_banner_G6.jpg');
 }
 .img5{
-background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner-X210.jpg');
+background-image:url('//p4.zdassets.com/hc/theme_assets/598858/200073509/banner-X210.jpg');
 }
 
 /**Encabezados de Sección**/
 
 .func {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner2-a2.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/banner2-a2.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -35,7 +35,7 @@ background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/ban
 }
 
 .conf {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner14.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/banner14.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -46,7 +46,7 @@ background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/ban
 }
 
 .repa {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Reparaci_n-y-Repuesto.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/Submetacategor_a-Reparaci_n-y-Repuesto.jpg);
   background-position: center;
   background-size: cover;
   height: 300px;
@@ -55,17 +55,9 @@ background-image:url('//p4.zdassets.com/hc/theme_assets/2025662/115000009683/ban
   width: 100%;
 }
 
-.slide1img{
-background-repeat: no-repeat;
-background-position:center;
-background-size:cover;
-width: auto; /*or your image's width*/
-height:300px; /*or your image's height*/
-}
-
 /**Este es el banner para la metacategoria movil*/
 .cateMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4a.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/banner4a.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -76,7 +68,7 @@ height:300px; /*or your image's height*/
 
 /**Este es el banner para los productos moviles**/
 .catMovil {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner4.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/banner4.jpg);
   background-position: center;
   background-size: cover;
   height: 450px;
@@ -86,7 +78,7 @@ height:300px; /*or your image's height*/
 }
 
 .catTab {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/metacategoria_tablet1_-_copia.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/metacategoria_tablet1_-_copia.jpg);
   background-position: center;
   background-size: cover;
   height: 420px;
@@ -96,7 +88,7 @@ height:300px; /*or your image's height*/
 }
 
 .catComp {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/banner8.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/banner8.jpg);
   background-position: center;
   background-size: cover;
   height: 420px;
@@ -108,7 +100,7 @@ height:300px; /*or your image's height*/
 
 /**Banner de la sección catalogo**/
 .herocatalogo {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/Submetacategor_a-Cat_logo.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/Submetacategor_a-Cat_logo.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -119,7 +111,7 @@ height:300px; /*or your image's height*/
 
 /**Ticket banner*/
 .ticketSoporte {
-  background-image: url(//p4.zdassets.com/hc/theme_assets/2025662/115000009683/contactoizq.jpg);
+  background-image: url(//p4.zdassets.com/hc/theme_assets/598858/200073509/girl-2618562_1920_izq2.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -729,7 +721,7 @@ ul {
 /***** Footer *****/
 .footer {
  /* border-top: 1px solid #ddd;*/
-  margin-top: 30px;
+  margin-top: 1px;
   padding: 0 0;
   background-color:black;
   width: 100%;
@@ -4278,6 +4270,11 @@ color:$color_1;
 }
 
 .blocks-ayuda-link {
+  color: $color_4;
+  padding: 20px 30px;
+}
+
+.blocks-ayuda-link-titulo {
   color: $color_3;
   padding: 20px 30px;
 }
@@ -5220,7 +5217,27 @@ height:inherit;
   top: 20em;
 }
 
+
+.slide1img{
+background-repeat: no-repeat;
+background-position:center;
+background-size:cover;
+width: auto; /*or your image's width*/
+height:300px; /*or your image's height*/
+}
+
+
 @media only screen and (max-width: 480px) {
+
+
+.slide1img{
+background-repeat: no-repeat;
+background-position:center;
+background-size:contain;
+width: auto; /*or your image's width*/
+height:300px; /*or your image's height*/
+}
+
 
   .carouselSection {
  width:320px;
@@ -5232,7 +5249,7 @@ height:inherit;
 .carousel li {
   width:250px;
   height: 300px;
-  background: #333;
+  background: $color_1;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -5287,4 +5304,52 @@ color:$color_3;
   color:$color_1;
   text-decoration: none;
   padding:20px;
+}
+
+.search-result-link{
+font-weight:bold;
+}
+/**Pagina de error, just for fun */
+.callejon {
+  background-color:black;
+  color:$color_1;
+  background-image: url('//p4.zdassets.com/hc/theme_assets/598858/200073509/errorPagina40.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 81vh;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.blocks-barra-error {
+  color: $color_5;
+  padding: 20px 30px;
+}
+
+
+@media only screen and (min-width: 1920px) {
+  .callejon {
+  color:$color_1;
+  background-image: url('//p4.zdassets.com/hc/theme_assets/598858/200073509/errorPagina40.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 81vh;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 1280px) {
+  .callejon {
+  color:$color_1;
+  background-image: url('//p4.zdassets.com/hc/theme_assets/598858/200073509/errorPagina40.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 81vh;
+  padding: 0 20px;
+  text-align: center;
+  width: 100%;
+}
 }

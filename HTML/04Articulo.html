@@ -39,6 +39,7 @@
 <div class="container">
 <nav class="sub-nav">
  {{breadcrumbs}}
+ {{search scoped=true submit=false}}
 </nav>
 
 
@@ -64,12 +65,9 @@
          {{/link}}
 
          <ul class="meta-group">
-           {{#is article.created_at article.updated_at}}
-             <li class="meta-data">{{date article.created_at timeago=true}}</li>
-           {{else}}
-             <li class="meta-data">{{date article.updated_at timeago=true}}</li>
-             <li class="meta-data">{{t 'updated'}}</li>
-           {{/is}}
+
+             <li class="meta-data">{{date article.created_at timeago=false}}</li>
+          <li class="meta-data">{{t 'updated'}} {{date article.updated_at timeago=true}}</li>
          </ul>
        </div>
      </div>
@@ -100,10 +98,10 @@
      <div class="article-footer">
        <div class="article-share">{{share}}</div>
        {{#if comments}}
-         <a href="#article-comments" class="article-comment-count">
+         <!--a href="#article-comments" class="article-comment-count">
            <span class="icon-comments"></span>
            {{article.comment_count}}
-         </a>
+         </a-->
        {{/if}}
      </div>
      {{#with article}}
@@ -123,7 +121,7 @@
        {{request_callout}}
      </div-->
 
-   <section class="container community">
+   <section id="agente" class="container community agenteColor">
 <h4>¿No encontraste lo que buscabas?</h4>
    <section class="section community">
     <h3>Contactar un agente</h3>

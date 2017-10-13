@@ -1,5 +1,6 @@
+
+<!--div class="error-page">
 <div class="container-divider"></div>
-<div class="error-page">
   <h1>{{t 'oops'}}</h1>
 
   {{#is error 'unauthorized'}}
@@ -18,4 +19,17 @@
   {{#link 'help_center'}}
     {{t 'back_to_homepage'}}
   {{/link}}
-</div>
+</div-->
+
+<section class="callejon">
+  <div class="hero-inner">
+     <h1>¡Oops! Llegaste al callejón 404</h1>
+      <h1>¿Cómo podemos ayudarte?</h1>
+    {{search submit=false instant=true class='search search-full'}}
+
+         {{#link 'new_request'  class="blocks-barra-error "}}
+             <h2>Contactar un agente de soporte</h2>
+          {{/link}}
+
+  </div>
+</section>
