@@ -1,21 +1,9 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script src="https://assets.zendesk.com/assets/apps/conditional_fields/latest/helpcenter.js"></script>
-<script>var cfaRules = [{"fieldType":"tagger","field":24368436,"value":"plt.computo","select":[25104586],"formId":35055,"requireds":[25104586]},{"fieldType":"tagger","field":24368436,"value":"plt.movil","select":[24368446],"formId":35055,"requireds":[24368446]}];</script>
-
-  <script>
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-  </script>
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,34 +13,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-KRLCNVN');</script>
 <!-- End Google Tag Manager -->
 
+<!-- Control del cache-->
+<!--META HTTP-EQUIV="Expires" CONTENT="Tue Oct 16 19:46:29 2018 GMT"-->
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="public, max-age:64080">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        <meta http-equiv="expires" content="0" /> 
+<meta name="revisit-after" content="1 days" /> 
 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--Codigo para barra de busqueda-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script>var cfaRules = [{"fieldType":"tagger","field":24368436,"value":"plt.computo","select":[25104586],"formId":35055,"requireds":[25104586]},{"fieldType":"tagger","field":24368436,"value":"plt.movil","select":[24368446],"formId":35055,"requireds":[24368446]}];</script>
+
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+
+<!-- Structured data: Corporation  -->
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
+  "@type": "Corporation",
+  "name": "Lanix Colombia",
+  "alternateName": "Lanix",
+  "url": "https://soporte.lanix.co{{page_path 'help_center'}}",
+  "logo": "https:{{logo_url}}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+57 01 800 518 4646",
+    "contactType": "customer service",
+    "areaServed": "CO",
+    "availableLanguage": "es-419"
+  },
+  "sameAs": [
+    "https://www.facebook.com/LanixColombia/",
+    "https://twitter.com/lanixcolombia",
+    "https://www.youtube.com/LanixColombia",
+    "https://plus.google.com/+LanixColombia"
+  ]
+}
+</script>
+
+<!-- Structured data: Website  -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
   "@type": "WebSite",
-  "url": "https://soporte.lanix.co/hc/es/",
+  "name": "{{help_center.name}}",
+  "alternateName": "Lanix Centro de Soporte",
+  "url": "htps://soporte.lanix.co{{page_path 'help_center'}}",
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "https://soporte.lanix.co/hc/es/search?utf8=%E2%9C%93&query={search_term_string}",
+    "target": "https://soporte.lanix.co/hc/es/search?utf8=%E2%9C%93&query{search_term_string}",
     "query-input": "required name=search_term_string"
   }
 }
 </script>
-
-<!--Codigo para empresa en busqueda -->
-<script type='application/ld+json'>
-{
-  "@context": "http://www.schema.org",
-  "@type": "Corporation",
-  "name": "Lanix Atención a Usuarios",
-  "url": "https://soporte.lanix.co/hc/es",
-  "logo": "https://p4.zdassets.com/hc/settings_assets/598858/200073509/lDiaPQvmx7a12cCjMMa5OA-logo_largo.PNG",
-  "openingHours": "Mo, Tu, We, Th, Fr 09:00-17:00",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "01-800-518-4646"
-  }
-}
- </script>
